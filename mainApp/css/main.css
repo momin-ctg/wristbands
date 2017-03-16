@@ -1,0 +1,330 @@
+/*Custom Style For Wristbands House Store Worldwide*/
+.video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    overflow-y: auto;
+    width: auto;
+    height: auto;
+    z-index: -10;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+/*Code for Navigation*/
+.brand {
+    position: relative;
+    bottom: 10px;
+}
+
+#login-dp {
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+#login-dp .help-block {
+    font-size: 12px
+}
+
+#login-dp .bottom {
+    background-color: rgba(255, 255, 255, .8);
+    border-top: 1px solid #ddd;
+    clear: both;
+    padding: 14px;
+}
+
+#login-dp .social-buttons {
+    margin: 12px 0
+}
+
+#login-dp .social-buttons a {
+    width: 49%;
+}
+
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+
+.btn-fb {
+    color: #fff;
+    background-color: #3b5998;
+}
+
+.btn-fb:hover {
+    color: #fff;
+    background-color: #496ebc
+}
+
+.btn-tw {
+    color: #fff;
+    background-color: #55acee;
+}
+
+.btn-tw:hover {
+    color: #fff;
+    background-color: #59b5fa;
+}
+
+@media (max-width: 768px) {
+    #login-dp {
+        background-color: inherit;
+        color: #fff;
+    }
+
+    #login-dp .bottom {
+        background-color: inherit;
+        border-top: 0 none;
+    }
+}
+
+/*left product sidebar*/
+.product_leftsidebar_head {
+    background: #f0ad4e;
+    border-radius: 2px;
+}
+
+.product_leftsidebar_head h2 {
+    color: #ffffff;
+    font-style: italic;
+    line-height: 1.5em;
+}
+
+/* End left product sidebar*/
+
+/*Start Design Lab*/
+.designLab_head {
+    background: #F0AD4E;
+    border-radius: 2px;
+}
+
+.designLab_head h3 {
+    color: #ffffff;
+    padding-left: 10px;
+    line-height: 3.2em;
+    font-size: 14px;
+}
+
+/*Start Wristbands Color*/
+
+/*Start Ink Color*/
+.wbColor ul li, .inkColor ul li {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.wbColor ul li:first-child, .inkColor ul li:first-child {
+    width: 120px;
+    height: 25px;
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+    vertical-align: middle;
+    bottom: 2px;
+    text-align: right;
+}
+
+.wbColor ul li:last-child, .inkColor ul li:last-child {
+    position: relative;
+    bottom: 3px;
+    right: 40px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.inkColor ul li:first-child a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wbColor ul li:nth-child(2), .inkColor ul li:nth-child(2) {
+    background: #0ca0db;
+}
+
+.wbColor ul li:nth-child(3), .inkColor ul li:nth-child(3) {
+    background: #552b83;
+}
+
+.wbColor ul li:nth-child(4), .inkColor ul li:nth-child(4) {
+    background: #285eab;
+}
+
+.wbColor ul li:nth-child(5), .inkColor ul li:nth-child(5) {
+    background: #172851;
+}
+
+.wbColor ul li:nth-child(6), .inkColor ul li:nth-child(6) {
+    background: #172851;
+}
+
+.wbColor ul li:nth-child(7), .inkColor ul li:nth-child(7) {
+    background: #00a9cb;
+}
+
+.wbColor ul li:nth-child(8), .inkColor ul li:nth-child(8) {
+    background: #b9d664;
+}
+
+.wbColor ul li:nth-child(9), .inkColor ul li:nth-child(9) {
+    background: #8c8e8b;
+}
+
+.wbColor ul li:nth-child(10), .inkColor ul li:nth-child(10) {
+    background: #836f3d;
+}
+
+.wbColor ul li:nth-child(11), .inkColor ul li:nth-child(11) {
+    background: #ec228f;
+}
+
+.wbColor ul li:nth-child(12), .inkColor ul li:nth-child(12) {
+    background: #5c798a;
+}
+
+.wbColor ul li:nth-child(13), .inkColor ul li:nth-child(13) {
+    background: #782b8f;
+}
+
+.wbColor ul li:nth-child(14), .inkColor ul li:nth-child(14) {
+    background: #75bf48;
+}
+
+.wbColor ul li:nth-child(15), .inkColor ul li:nth-child(15) {
+    background: #5f3515;
+}
+
+.wbColor ul li:nth-child(16), .inkColor ul li:nth-child(16) {
+    background: #244e33;
+}
+
+.wbColor ul li:nth-child(17), .inkColor ul li:nth-child(17) {
+    background: #00793e;
+}
+
+.wbColor ul li:nth-child(18), .inkColor ul li:nth-child(18) {
+    background: #74ccd9;
+}
+
+.wbColor ul li:nth-child(19), .inkColor ul li:nth-child(19) {
+    background: #009885;
+}
+
+.wbColor ul li:nth-child(20), .inkColor ul li:nth-child(20) {
+    background: #6fcce0;
+}
+
+.wbColor ul li:nth-child(21), .inkColor ul li:nth-child(21) {
+    background: #bc92c2;
+}
+
+.wbColor ul li:nth-child(22), .inkColor ul li:nth-child(22) {
+    background: #f49ec3;
+}
+
+.wbColor ul li:nth-child(23), .inkColor ul li:nth-child(23) {
+    background: #762732;
+}
+
+.wbColor ul li:nth-child(24), .inkColor ul li:nth-child(24) {
+    background: #982035;
+}
+
+.wbColor ul li:nth-child(25), .inkColor ul li:nth-child(25) {
+    background: #ec6b23;
+}
+
+.wbColor ul li:nth-child(26), .inkColor ul li:nth-child(26) {
+    background: #e61d2f;
+}
+
+.wbColor ul li:nth-child(27), .inkColor ul li:nth-child(27) {
+    background: #e47525;
+}
+
+.wbColor ul li:nth-child(28), .inkColor ul li:nth-child(28) {
+    background: #f6eb0f;
+}
+
+.wbColor ul li:nth-child(29), .inkColor ul li:nth-child(29) {
+    background: #ffffff;
+}
+
+.wbColor ul li:nth-child(30), .inkColor ul li:nth-child(30) {
+    background: #ffc61f;
+}
+
+.wbColor ul li:nth-child(31), .inkColor ul li:nth-child(31) {
+    background: #000;
+}
+
+/*End Ink Color*/
+
+/*Custom Design Area*/
+.cn_size{
+    position: absolute;
+    top:-20px;
+    right:-5px;
+}
+.custom_design_area{
+    margin-top:50px;
+    border: 1px solid #828282;
+    padding:20px;
+}
+.cn_custom_nameband {
+    padding: 50px 0;
+}
+
+.cn_custombandBG_layer {
+    background-image: url("../images/wb_layer.png");
+    background-repeat: no-repeat;
+    background-size:815px 88px;
+    display: block;
+    padding:40px 0;
+}
+
+.cn_custom_layer {
+    width: 212mm;
+    height: 12mm;
+    border: 1px solid #dddddd;
+    background: transparent;
+    position: relative;
+    bottom: 20px;
+}
+
+.order_instruction {
+    padding-top: 30px;
+}
+
+.submit_btn {
+    margin-top: 30px;
+}
+
+/*End Custom Design Area
+End  Design Lab*/
+
+/*Right Side Custom Product View*/
+.videoGallery_head {
+
+    padding: 10px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.customProduct_description {
+    border: 1px solid #828282;
+    padding: 0 10px 10px 10px;
+}
+
+.customProduct_gallery ul li{
+    padding-bottom:15px;
+}
+
+/*End Right Side Custom Product View*/
+
