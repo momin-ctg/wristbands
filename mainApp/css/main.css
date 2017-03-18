@@ -334,5 +334,16 @@ End  Design Lab*/
     padding-bottom: 15px;
 }
 
+/*TODO: this code must be put into proper place*/
+.cn_design_form .righttext {
+    position: absolute;
+    right: 15px;
+    color: blue;
+}
+
+div > .righttext {
+    position: relative
+}
+
 /*End Right Side Custom Product View*/
 
