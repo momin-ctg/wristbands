@@ -84,7 +84,7 @@
 
 /*left product sidebar*/
 .product_leftsidebar_head {
-    background: #f0ad4e;
+    background: #808080;
     border-radius: 2px;
 }
 
@@ -97,8 +97,13 @@
 /* End left product sidebar*/
 
 /*Start Design Lab*/
+.designLab_product figure {
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+}
+
 .designLab_head {
-    background: #F0AD4E;
+    background: #b3b3b3;
     border-radius: 2px;
 }
 
@@ -266,16 +271,18 @@
 /*End Ink Color*/
 
 /*Custom Design Area*/
-.cn_size{
+.cn_size {
     position: absolute;
-    top:-20px;
-    right:-5px;
+    top: -20px;
+    right: -5px;
 }
-.custom_design_area{
-    margin-top:50px;
+
+.custom_design_area {
+    margin-top: 50px;
     border: 1px solid #828282;
-    padding:20px;
+    padding: 20px;
 }
+
 .cn_custom_nameband {
     padding: 50px 0;
 }
@@ -283,9 +290,9 @@
 .cn_custombandBG_layer {
     background-image: url("../images/wb_layer.png");
     background-repeat: no-repeat;
-    background-size:815px 88px;
+    background-size: 815px 88px;
     display: block;
-    padding:40px 0;
+    padding: 40px 0;
 }
 
 .cn_custom_layer {
@@ -310,7 +317,6 @@ End  Design Lab*/
 
 /*Right Side Custom Product View*/
 .videoGallery_head {
-
     padding: 10px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -319,11 +325,13 @@ End  Design Lab*/
 
 .customProduct_description {
     border: 1px solid #828282;
-    padding: 0 10px 10px 10px;
+    background: #f9f9f9;
+    padding: 0 15px;
+    margin-top: 10px;
 }
 
-.customProduct_gallery ul li{
-    padding-bottom:15px;
+.customProduct_gallery ul li {
+    padding-bottom: 15px;
 }
 
 /*End Right Side Custom Product View*/
