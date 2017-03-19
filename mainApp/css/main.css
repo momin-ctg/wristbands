@@ -91,7 +91,8 @@
 .product_leftsidebar_head h2 {
     color: #ffffff;
     font-style: italic;
-    line-height: 1.5em;
+    line-height: 2em;
+    font-size: 22px;
 }
 
 /* End left product sidebar*/
@@ -324,10 +325,16 @@ End  Design Lab*/
 }
 
 .customProduct_description {
-    border: 1px solid #828282;
+    border: 1px solid rgb(179, 179, 179);
     background: #f9f9f9;
     padding: 0 15px;
     margin-top: 10px;
+    border-radius: 2px;
+}
+
+.customProduct_description h2 {
+    position: relative;
+    bottom: 12px;
 }
 
 .customProduct_gallery ul li {
