@@ -335,12 +335,12 @@ End  Design Lab*/
 .customProduct_description h2 {
     position: relative;
     bottom: 12px;
+    font-size: 24px;
 }
 
 .customProduct_gallery ul li {
     padding-bottom: 15px;
 }
-
 
 .cn_design_form .helpText {
     position: absolute;
@@ -360,6 +360,7 @@ div > .helpText {
     position: relative;
     overflow: hidden;
 }
+
 .btn-file input[type=file] {
     position: absolute;
     top: 0;
@@ -374,5 +375,6 @@ div > .helpText {
     cursor: inherit;
     display: block;
 }
+
 /*End Right Side Custom Product View*/
 
