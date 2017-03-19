@@ -341,16 +341,38 @@ End  Design Lab*/
     padding-bottom: 15px;
 }
 
-/*TODO: this code must be put into proper place*/
-.cn_design_form .righttext {
+
+.cn_design_form .helpText {
     position: absolute;
-    right: 15px;
-    color: blue;
+    right: 18px;
+    color: #0752ff;
+    font-size: 10px;
 }
 
-div > .righttext {
-    position: relative
+div > .helpText {
+    position: relative;
+    top: 5px;
+    font-style: italic;
+    cursor: pointer;
 }
 
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
 /*End Right Side Custom Product View*/
 
