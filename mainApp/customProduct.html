@@ -13,8 +13,9 @@
     <!--Sass, Less & bourbon Mixin Compiler Here-->
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="../bower_components/jquery-ui/themes/black-tie/jquery-ui.css">
-    <link rel="stylesheet" href="../bower_components/jquery-ui/themes/black-tie/theme.css">
+    <link rel="stylesheet" href="../bower_components/jquery-ui/themes/blitzer/theme.css">
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -22,459 +23,517 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<!-- Second navbar for categories -->
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand brand" href="#"><img src="images/cn_logo.png" alt=""></a>
-        </div>
-        <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
+<div id="st-container" class="st-container">
+    <!----------------------------
+       Login and Register Panel
+      ---------------------------->
+    <nav class="st-menu st-effect-5" id="menu-5" style="padding: 20px;">
+        <h2 class="icon icon-stack text-center">Login</h2>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input class="form-control" type="text" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="email">Password</label>
+                    <input class="form-control" type="text" id="email">
+                </div>
+                <div class="form-group">
+                    <input class="form-control btn btn-success" type="submit" value="Login">
+                </div>
             </div>
-            <button type="submit" class="btn btn-default">Search</button>
-        </form>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-left">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="customProduct.html">Product</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+        </div>
+    </nav>
+    <!--End Login and Register Panel-->
 
-            <ul class="nav navbar-nav navbar-right">
-                <li><p class="navbar-text">Already have an account?</p></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
-                    <ul id="login-dp" class="dropdown-menu">
-                        <li>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    Login via
-                                    <div class="social-buttons">
-                                        <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-                                        <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
-                                    </div>
-                                    or
-                                    <form class="form" role="form" method="post" action="" accept-charset="UTF-8"
-                                          id="login-nav">
-                                        <div class="form-group">
-                                            <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail2"
-                                                   placeholder="Email address" required>
+    <!-- content push wrapper -->
+    <div class="st-pusher">
+        <div class="st-content"><!-- this is the wrapper for the content -->
+            <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+                <!---------------------------
+                Second Navbar for categories
+                ----------------------------->
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand brand" href="#"><img src="images/cn_logo.png" alt=""></a>
+                        </div>
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">Search</button>
+                        </form>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="customProduct.html">Product</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Works</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                            <!--TODO: 15px right margin for navbar-text fix later-->
+                            <div class="main clearfix">
+                                <div id="st-trigger-effects" class="column">
+                                    <!--<ul class="nav navbar-nav navbar-right main clearfix">-->
+                                    <!--<li><p class="navbar-text"><a href=""><b>Sign Up</b></a></p></li>-->
+                                    <!--<li class="st-trigger-effects"><a href><button data-effect="st-effect-5">Login</button></a></li>-->
+                                    <!--</ul>-->
+                                    <button data-effect="st-effect-5">Login</button>
+                                </div>
+                            </div>
+
+                        </div><!-- /.navbar-collapse -->
+                    </div>
+                </nav>
+                <!-- /.navbar -->
+
+
+                <!------------------------
+                        Product Area
+                ------------------------->
+                <div class="customProduct_area">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="product_leftsidebar_area">
+                                <div class="col-md-2 col-sm-4 col-xs-12">
+                                    <div class="product_leftsidebar">
+                                        <div class="product_leftsidebar_head text-center">
+                                            <h2>Custom Product</h2>
                                         </div>
-                                        <div class="form-group">
-                                            <label class="sr-only" for="exampleInputPassword2">Password</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword2"
-                                                   placeholder="Password" required>
-                                            <div class="help-block text-right"><a href="">Forget the password ?</a>
+                                        <div id="accordion">
+                                            <h3>Silicon Wristbands</h3>
+                                            <div>
+                                                <ul>
+                                                    <li><a href="">Debossed Wristbands</a></li>
+                                                    <li><a href="">Debossed Inkfilled Wristbands</a></li>
+                                                    <li><a href="">Screen Printed Wristbands</a></li>
+                                                    <li><a href="">Embossed Wristbands</a></li>
+                                                    <li><a href="">Embossed Printed Wristbands</a></li>
+                                                    <li><a href="">Color Coated Wristbands</a></li>
+                                                    <li><a href="">Figured Wristbands</a></li>
+                                                </ul>
+                                            </div>
+                                            <h3>Lanyards & Badge</h3>
+                                            <div>
+                                                <p>
+                                                    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit
+                                                    amet
+                                                    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis
+                                                    porttitor
+                                                    velit, faucibus interdum tellus libero ac justo. Vivamus non quam.
+                                                    In
+                                                    suscipit faucibus urna.
+                                                </p>
+                                            </div>
+                                            <h3>Beer Koozies</h3>
+                                            <div>
+                                                <p>
+                                                    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque
+                                                    lobortis.
+                                                    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac
+                                                    libero
+                                                    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                                                    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus
+                                                    venenatis dui.
+                                                </p>
+                                                <ul>
+                                                    <li>List item one</li>
+                                                    <li>List item two</li>
+                                                    <li>List item three</li>
+                                                </ul>
+                                            </div>
+                                            <h3>Tyvek Wristbands</h3>
+                                            <div>
+                                                <p>
+                                                    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                                                    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis
+                                                    in
+                                                    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean
+                                                    lacinia
+                                                    mauris vel est.
+                                                </p>
+                                                <p>
+                                                    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat
+                                                    lectus.
+                                                    Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                                                    per
+                                                    inceptos himenaeos.
+                                                </p>
+                                            </div>
+                                            <h3>Pinbadge</h3>
+                                            <div>
+                                                <p>
+                                                    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                                                    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis
+                                                    in
+                                                    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean
+                                                    lacinia
+                                                    mauris vel est.
+                                                </p>
+                                                <p>
+                                                    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat
+                                                    lectus.
+                                                    Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                                                    per
+                                                    inceptos himenaeos.
+                                                </p>
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox"> keep me logged-in
-                                            </label>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="bottom text-center">
-                                    New here ? <a href="#"><b>Join Us</b></a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div>
-</nav>
-<!-- /.navbar -->
-
-
-<!--Product Area-->
-<div class="customProduct_area">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="product_leftsidebar_area">
-                <div class="col-md-2 col-sm-4 col-xs-12">
-                    <div class="product_leftsidebar">
-                        <div class="product_leftsidebar_head text-center">
-                            <h2>Custom Product</h2>
-                        </div>
-                        <div id="accordion">
-                            <h3>Silicon Wristbands</h3>
-                            <div>
-                                <ul>
-                                    <li><a href="">Debossed Wristbands</a></li>
-                                    <li><a href="">Debossed Inkfilled Wristbands</a></li>
-                                    <li><a href="">Screen Printed Wristbands</a></li>
-                                    <li><a href="">Embossed Wristbands</a></li>
-                                    <li><a href="">Embossed Printed Wristbands</a></li>
-                                    <li><a href="">Color Coated Wristbands</a></li>
-                                    <li><a href="">Figured Wristbands</a></li>
-                                </ul>
-                            </div>
-                            <h3>Lanyards & Badge</h3>
-                            <div>
-                                <p>
-                                    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-                                    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-                                    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-                                    suscipit faucibus urna.
-                                </p>
-                            </div>
-                            <h3>Beer Koozies</h3>
-                            <div>
-                                <p>
-                                    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-                                    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-                                    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-                                    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-                                </p>
-                                <ul>
-                                    <li>List item one</li>
-                                    <li>List item two</li>
-                                    <li>List item three</li>
-                                </ul>
-                            </div>
-                            <h3>Tyvek Wristbands</h3>
-                            <div>
-                                <p>
-                                    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                                    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                                    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                                    mauris vel est.
-                                </p>
-                                <p>
-                                    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-                                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                                    inceptos himenaeos.
-                                </p>
-                            </div>
-                            <h3>Pinbadge</h3>
-                            <div>
-                                <p>
-                                    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                                    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                                    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                                    mauris vel est.
-                                </p>
-                                <p>
-                                    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-                                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                                    inceptos himenaeos.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--Custom Product Area-->
-            <div class="designLab_area">
-                <div class="designLab">
-                    <div class="col-md-7 col-xs-12">
-                        <div class="designLab_head">
-                            <h3>Select Any One</h3>
-                        </div>
-                        <div class="designLab_product">
-                            <div class="row">
-                                <div class="14wristbands">
-                                    <div class="col-md-3">
-                                        <div class="14wristbands_ind">
-                                            <figure>
-                                                <a href=""><img class="img-responsive" src="images/14debossed.jpg"
-                                                                alt=""></a>
-                                                <figcaption class="text-center">
-                                                    1/4 Inch Debossed Wristbands
-                                                </figcaption>
-                                            </figure>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="12wristbands">
-                                    <div class="col-md-3">
-                                        <div class="12wristbands_ind">
-                                            <figure>
-                                                <a href=""><img class="img-responsive" src="images/12debossed.jpg"
-                                                                alt=""></a>
-                                                <figcaption class="text-center">
-                                                    1/2 Inch Debossed Wristbands
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="34wristbands">
-                                    <div class="col-md-3">
-                                        <div class="34wristbands_ind">
-                                            <figure>
-                                                <a href=""><img class="img-responsive" src="images/34debossed.jpg"
-                                                                alt="wristbands_china"></a>
-                                                <figcaption class="text-center">
-                                                    3/4 inch Debossed Wristbands
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="1wristbands">
-                                    <div class="col-md-3">
-                                        <div class="1wristbands_ind">
-                                            <figure>
-                                                <a href=""><img class="img-responsive" src="images/1debossed.jpg"
-                                                                alt=""></a>
-                                                <figcaption class="text-center">
-                                                    1 Inch Debossed Wristbands
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Start Main design Area-->
-                        <div class="custom_design_area">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="cn_custom_nameband">
-                                        <div class="cn_custombandBG_layer">
-                                            <div class="cn_custom_layer"></div>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown cn_size">
-                                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
-                                            Size
-                                            <span class="caret"></span></button>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#"><input type="radio" name="size"> Adult</a></li>
-                                            <li><a href="#"><input type="radio" name="size"> Medium</a></li>
-                                            <li><a href="#"><input type="radio" name="size"> Youth</a></li>
-                                            <li><a href="#"><input type="radio" name="size"> Child</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="wbColor">
-                                        <ul class="list-inline">
-                                            <li>Wristbands Color</li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href="">help</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="col-md-12 col-xs-12">
-                                    <div class="inkColor">
-                                        <ul class="list-inline">
-                                            <li>Ink Color</li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href="">help</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
                             </div>
 
-                            <div class="row">
-                                <div class="col-md-12 col-xs-12">
-                                    <div class="row">
-                                        <div class="cn_design_form">
-                                            <form action="" class="form-horizontal">
-                                                <div class="col-sm-5">
-                                                    <label for="text">Text</label>
-                                                    <label class="helpText" for="text">help</label><br/>
-                                                    <input class="form-control" type="text" name="" id="text">
+                            <!--Custom Product Area-->
+                            <div class="designLab_area">
+                                <div class="designLab">
+                                    <div class="col-md-7 col-xs-12">
+                                        <div class="designLab_head">
+                                            <h3>Select Any One</h3>
+                                        </div>
+                                        <div class="designLab_product">
+                                            <div class="row">
+                                                <div class="14wristbands">
+                                                    <div class="col-md-3">
+                                                        <div class="14wristbands_ind">
+                                                            <figure>
+                                                                <a href=""><img class="img-responsive"
+                                                                                src="images/14debossed.jpg"
+                                                                                alt=""></a>
+                                                                <figcaption class="text-center">
+                                                                    1/4 Inch Debossed Wristbands
+                                                                </figcaption>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="col-sm-4">
-                                                    <label for="fonts">Font</label>
-                                                    <label class="helpText" for="fonts">help</label><br/>
-                                                    <input class="form-control" type="text" name="" id="fonts">
+                                                <div class="12wristbands">
+                                                    <div class="col-md-3">
+                                                        <div class="12wristbands_ind">
+                                                            <figure>
+                                                                <a href=""><img class="img-responsive"
+                                                                                src="images/12debossed.jpg"
+                                                                                alt=""></a>
+                                                                <figcaption class="text-center">
+                                                                    1/2 Inch Debossed Wristbands
+                                                                </figcaption>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="col-sm-3">
-                                                    <label for="upload">
-                                                        <small>Upload Your Design</small>
-                                                    </label> <label class="helpText" for="fonts">help</label><br/>
-                                                    <span class="btn btn-default btn-block btn-file">
+                                                <div class="34wristbands">
+                                                    <div class="col-md-3">
+                                                        <div class="34wristbands_ind">
+                                                            <figure>
+                                                                <a href=""><img class="img-responsive"
+                                                                                src="images/34debossed.jpg"
+                                                                                alt="wristbands_china"></a>
+                                                                <figcaption class="text-center">
+                                                                    3/4 inch Debossed Wristbands
+                                                                </figcaption>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="1wristbands">
+                                                    <div class="col-md-3">
+                                                        <div class="1wristbands_ind">
+                                                            <figure>
+                                                                <a href=""><img class="img-responsive"
+                                                                                src="images/1debossed.jpg"
+                                                                                alt=""></a>
+                                                                <figcaption class="text-center">
+                                                                    1 Inch Debossed Wristbands
+                                                                </figcaption>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--Start Main design Area-->
+                                        <div class="custom_design_area">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="cn_custom_nameband">
+                                                        <div class="cn_custombandBG_layer">
+                                                            <div class="cn_custom_layer"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown cn_size">
+                                                        <button class="btn dropdown-toggle" type="button"
+                                                                data-toggle="dropdown">
+                                                            Size
+                                                            <span class="caret"></span></button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="#"><input type="radio" name="size"> Adult</a>
+                                                            </li>
+                                                            <li><a href="#"><input type="radio" name="size"> Medium</a>
+                                                            </li>
+                                                            <li><a href="#"><input type="radio" name="size"> Youth</a>
+                                                            </li>
+                                                            <li><a href="#"><input type="radio" name="size"> Child</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="wbColor">
+                                                        <ul class="list-inline">
+                                                            <li>Wristbands Color</li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href="">help</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="col-md-12 col-xs-12">
+                                                    <div class="inkColor">
+                                                        <ul class="list-inline">
+                                                            <li>Ink Color</li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href="">help</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12 col-xs-12">
+                                                    <div class="row">
+                                                        <div class="cn_design_form">
+                                                            <form action="" class="form-horizontal">
+                                                                <div class="col-sm-5">
+                                                                    <label for="text">Text</label>
+                                                                    <label class="helpText" for="text">help</label><br/>
+                                                                    <input class="form-control" type="text" name=""
+                                                                           id="text">
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <label for="fonts">Font</label>
+                                                                    <label class="helpText"
+                                                                           for="fonts">help</label><br/>
+                                                                    <input class="form-control" type="text" name=""
+                                                                           id="fonts">
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <label for="upload">
+                                                                        <small>Upload Your Design</small>
+                                                                    </label> <label class="helpText"
+                                                                                    for="fonts">help</label><br/>
+                                                                    <span class="btn btn-default btn-block btn-file">
                                                          Browse...<input type="file" id="upload">
                                                     </span>
-                                                </div>
-                                                <div class="col-sm-5">
-                                                    <label for="o_detailsNote">Order details</label>
-                                                    <textarea class="form-control" name="" id="o_detailsNote" cols="30"
-                                                              rows="5"></textarea>
-                                                </div>
+                                                                </div>
+                                                                <div class="col-sm-5">
+                                                                    <label for="o_detailsNote">Order details</label>
+                                                                    <textarea class="form-control" name=""
+                                                                              id="o_detailsNote"
+                                                                              cols="30"
+                                                                              rows="5"></textarea>
+                                                                </div>
 
-                                                <div class="col-sm-7">
-                                                    <div class="order_instruction">
-                                                        <p>Write down about your design, text color or other
-                                                            specification,
-                                                            We will send you Digital proof, out 24/7 team always ready
-                                                            to
-                                                            assist you.</p>
-                                                        <p>
-                                                            if yu get any problem or anything which doesn't match with
-                                                            what
-                                                            you looking for, you can send us email to
-                                                            <a href="mailto:info@wristbandshouse.com">info@wristbandshouse.com</a>
-                                                        </p>
+                                                                <div class="col-sm-7">
+                                                                    <div class="order_instruction">
+                                                                        <p>Write down about your design, text color or
+                                                                            other
+                                                                            specification,
+                                                                            We will send you Digital proof, out 24/7
+                                                                            team always
+                                                                            ready
+                                                                            to
+                                                                            assist you.</p>
+                                                                        <p>
+                                                                            if yu get any problem or anything which
+                                                                            doesn't
+                                                                            match with
+                                                                            what
+                                                                            you looking for, you can send us email to
+                                                                            <a href="mailto:info@wristbandshouse.com">info@wristbandshouse.com</a>
+                                                                        </p>
 
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="clearfix"></div>
+
+                                                                <div class="col-sm-2">
+                                                                    <div class="submit_btn">
+                                                                        <input class="btn btn-success form-control"
+                                                                               type="submit"
+                                                                               value="Submit">
+                                                                    </div>
+                                                                </div>
+
+                                                            </form>
+                                                        </div>
                                                     </div>
                                                 </div>
-
-                                                <div class="clearfix"></div>
-
-                                                <div class="col-sm-2">
-                                                    <div class="submit_btn">
-                                                        <input class="btn btn-success form-control" type="submit"
-                                                               value="Submit">
-                                                    </div>
-                                                </div>
-
-                                            </form>
+                                            </div>
                                         </div>
+                                        <!--End Main Design Area-->
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!--End Main Design Area-->
-                    </div>
-                </div>
-            </div>
-            <!--End Custom Product Area-->
+                            <!--End Custom Product Area-->
 
-            <!--Start Right Custom Product & video Gallery-->
-            <div class="custom_video_gallery_area">
-                <div class="col-md-3 col-xs-12 col-sm-4">
-                    <div class="videoGallery_head">
-                        <div class="customProduct_description">
-                            <h2> Silicon Wristbands</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo laudantium natus non
-                                possimus quam repellat voluptas! A aperiam asperiores assumenda aut commodi culpa cumque
-                                delectus deleniti dolore dolorum ea et harum hic in magnam molestias mollitia natus
-                                officiis perspiciatis placeat sit suscipit, tenetur veniam voluptas, voluptatibus?
-                                Architecto aspernatur at autem commodi, cupiditate deserunt, dolores ea enim expedita
-                                fuga harum hic molestiae nesciunt nisi obcaecati, omnis possimus rerum sed similique
-                                ullam. Animi autem, beatae commodi cupiditate delectus deleniti exercitationem fuga,
-                                harum illum iusto modi necessitatibus nobis quibusdam quisquam quod repellat sequi
-                                tenetur voluptatum? Aspernatur assumenda cupiditate dolorem ipsa laborum quos
-                                repellendus?
-                            </p>
+                            <!--Start Right Custom Product & video Gallery-->
+                            <div class="custom_video_gallery_area">
+                                <div class="col-md-3 col-xs-12 col-sm-4">
+                                    <div class="videoGallery_head">
+                                        <div class="customProduct_description">
+                                            <h2> Silicon Wristbands</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
+                                                laudantium
+                                                natus non
+                                                possimus quam repellat voluptas! A aperiam asperiores assumenda aut
+                                                commodi
+                                                culpa cumque
+                                                delectus deleniti dolore dolorum ea et harum hic in magnam molestias
+                                                mollitia
+                                                natus
+                                                officiis perspiciatis placeat sit suscipit, tenetur veniam voluptas,
+                                                voluptatibus?
+                                                Architecto aspernatur at autem commodi, cupiditate deserunt, dolores ea
+                                                enim
+                                                expedita
+                                                fuga harum hic molestiae nesciunt nisi obcaecati, omnis possimus rerum
+                                                sed
+                                                similique
+                                                ullam. Animi autem, beatae commodi cupiditate delectus deleniti
+                                                exercitationem
+                                                fuga,
+                                                harum illum iusto modi necessitatibus nobis quibusdam quisquam quod
+                                                repellat
+                                                sequi
+                                                tenetur voluptatum? Aspernatur assumenda cupiditate dolorem ipsa laborum
+                                                quos
+                                                repellendus?
+                                            </p>
 
-                            <div class="custom_video">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe src="https://www.youtube.com/embed/BooSzvXONcA" frameborder="0"
-                                            allowfullscreen="0"></iframe>
+                                            <div class="custom_video">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe src="https://www.youtube.com/embed/BooSzvXONcA"
+                                                            frameborder="0"
+                                                            allowfullscreen="0"></iframe>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="customProduct_gallery">
+                                                <h4>Gallery</h4>
+                                                <ul class="list-inline">
+                                                    <li><a href=""><img src="https://unsplash.it/100/80" alt=""></a>
+                                                    </li>
+                                                    <li><a href=""><img src="https://unsplash.it/100/80" alt=""></a>
+                                                    </li>
+                                                    <li><a href=""><img src="https://unsplash.it/100/80" alt=""></a>
+                                                    </li>
+                                                    <li><a href=""><img src="https://unsplash.it/100/80" alt=""></a>
+                                                    </li>
+                                                    <li><a href=""><img src="https://unsplash.it/100/80" alt=""></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
 
+                            <!--End Right Custom Product & video Gallery-->
 
-                            <div class="customProduct_gallery">
-                                <h4>Gallery</h4>
-                                <ul class="list-inline">
-                                    <li><a href=""><img src="https://unsplash.it/100/80" alt=""></a></li>
-                                    <li><a href=""><img src="https://unsplash.it/100/80" alt=""></a></li>
-                                    <li><a href=""><img src="https://unsplash.it/100/80" alt=""></a></li>
-                                    <li><a href=""><img src="https://unsplash.it/100/80" alt=""></a></li>
-                                    <li><a href=""><img src="https://unsplash.it/100/80" alt=""></a></li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
-            <!--End Right Custom Product & video Gallery-->
-
         </div>
     </div>
 </div>
 <!--End Product Area-->
 
 
-<script src="../bower_components/jquery/dist/jquery.js"></script>
+<!--<script src="../bower_components/jquery/dist/jquery.js"></script>-->
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="../bower_components/jquery-ui/jquery-ui.js"></script>
 <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="js/classie.js"></script>
 <script src="js/main.js"></script>
 
 
