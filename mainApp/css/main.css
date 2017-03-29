@@ -1,4 +1,7 @@
-/*Custom Style For Wristbands House Store Worldwide*/
+/*==================================
+  Custom Style For Wristbands House
+		 Store Worldwide
+ ===================================*/
 .video {
     position: fixed;
     top: 50%;
@@ -14,7 +17,10 @@
     transition: 1s opacity;
 }
 
-/*Code for Navigation*/
+
+/*============================
+	Code for Navigation
+ =============================*/
 .brand {
     position: relative;
     bottom: 10px;
@@ -82,7 +88,12 @@
     }
 }
 
-/*left product sidebar*/
+
+
+
+/*============================
+	 Left product sidebar
+ =============================*/
 .product_leftsidebar_head {
     background: #808080;
     border-radius: 2px;
@@ -97,7 +108,11 @@
 
 /* End left product sidebar*/
 
-/*Start Design Lab*/
+
+
+/*============================
+	 Start design lab
+ =============================*/
 .designLab_product figure {
     border: 1px solid #dddddd;
     border-radius: 2px;
@@ -115,9 +130,13 @@
     font-size: 14px;
 }
 
-/*Start Wristbands Color*/
 
-/*Start Ink Color*/
+
+
+/*============================
+  Start ink & wristbands color
+ =============================*/
+
 .wbColor ul li, .inkColor ul li {
     width: 15px;
     height: 15px;
@@ -269,9 +288,12 @@
     background: #000;
 }
 
-/*End Ink Color*/
 
-/*Custom Design Area*/
+
+
+/*============================
+	Custom Design Area
+ =============================*/
 .cn_size {
     position: absolute;
     top: -20px;
@@ -312,6 +334,8 @@
 .submit_btn {
     margin-top: 30px;
 }
+
+
 
 
 /*============================
