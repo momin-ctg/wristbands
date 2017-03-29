@@ -17,7 +17,6 @@
     transition: 1s opacity;
 }
 
-
 /*============================
 	Code for Navigation
  =============================*/
@@ -88,9 +87,6 @@
     }
 }
 
-
-
-
 /*============================
 	 Left product sidebar
  =============================*/
@@ -107,8 +103,6 @@
 }
 
 /* End left product sidebar*/
-
-
 
 /*============================
 	 Start design lab
@@ -129,9 +123,6 @@
     line-height: 3.2em;
     font-size: 14px;
 }
-
-
-
 
 /*============================
   Start ink & wristbands color
@@ -288,9 +279,6 @@
     background: #000;
 }
 
-
-
-
 /*============================
 	Custom Design Area
  =============================*/
@@ -334,9 +322,6 @@
 .submit_btn {
     margin-top: 30px;
 }
-
-
-
 
 /*============================
     End Custom Design Area
@@ -404,3 +389,40 @@ div > .helpText {
 
 /*End Right Side Custom Product View*/
 
+/*============================
+       Start Login page
+ =============================*/
+.form{
+    background: #f9f9f9;
+    padding: 20px;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+}
+.login-logo img{
+    display: block;
+    width:350px;
+    margin: 30px auto;
+}
+
+.login-area {
+    background-image: url(https://unsplash.it/3000/1200);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    padding-top: 250px;
+}
+
+.login-area:before {
+    content: "";
+    background-color: #0b93d5;
+    opacity: 0.2;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+}
