@@ -426,3 +426,8 @@ div > .helpText {
     width: 100%;
     top: 0;
 }
+
+.register h2{
+    font-size:20px;
+    line-height:1.5em;
+}
