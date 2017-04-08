@@ -86,6 +86,12 @@
         border-top: 0 none;
     }
 }
+/*Product page total area*/
+.customProduct_area{
+    margin-top:-20px;
+}
+
+
 
 /*============================
 	 Left product sidebar
@@ -102,7 +108,6 @@
     font-size: 22px;
 }
 
-/* End left product sidebar*/
 
 /*============================
 	 Start design lab
@@ -281,7 +286,7 @@
 
 /*============================
 	Custom Design Area
- =============================*/
+  ============================*/
 .cn_size {
     position: absolute;
     top: -20px;
@@ -289,7 +294,7 @@
 }
 
 .custom_design_area {
-    margin-top: 50px;
+    margin-top: 20px;
     border: 1px solid #828282;
     padding: 20px;
 }
@@ -309,7 +314,7 @@
 .cn_custom_layer {
     width: 212mm;
     height: 12mm;
-    border: 1px solid #dddddd;
+    border: 1px solid transparent;
     background: transparent;
     position: relative;
     bottom: 20px;
@@ -321,6 +326,18 @@
 
 .submit_btn {
     margin-top: 30px;
+}
+
+.submit_btn input[type="submit"] {
+    padding-bottom:40px;
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+    background: #1bb850;
+    color: #ffffff;
+    border:none;
+    border-radius: 0;
+    font-style: italic;
 }
 
 /*============================
@@ -387,7 +404,6 @@ div > .helpText {
     display: block;
 }
 
-/*End Right Side Custom Product View*/
 
 /*============================
        Start Login page
